@@ -10,15 +10,15 @@ jobs:
     name: Test with Deno ${{ matrix.deno }} 
 
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@main
 
       - name: Setup Deno
-        uses: denolib/setup-deno@master
+        uses: denolib/setup-deno@main
         with:
           deno-version: ${{ matrix.deno }}
 
       - name: Setup Node
-        uses: actions/setup-node@master
+        uses: actions/setup-node@main
         with:
           node-version: 12
 
